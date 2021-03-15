@@ -282,6 +282,7 @@ void raw_hid_receive(uint8_t *data, uint8_t length) {
                         layer_rgb[layer].hsv.v = value;
                         data[1] = 0;
                         system76_ec_rgb_layer(layer_state);
+                        system76_ec_rgb_eeprom(true); // TODO: instead use command for save/load
                         break;
                     }
                 }
@@ -329,6 +330,7 @@ void raw_hid_receive(uint8_t *data, uint8_t length) {
                             // Ignore rgb.b
                             data[1] = 0;
                             system76_ec_rgb_layer(layer_state);
+                            system76_ec_rgb_eeprom(true); // TODO: instead use command for save/load
                             break;
                         }
                     }
@@ -361,6 +363,7 @@ void raw_hid_receive(uint8_t *data, uint8_t length) {
                     layer_rgb[layer].speed = speed;
                     data[1] = 0;
                     system76_ec_rgb_layer(layer_state);
+                    system76_ec_rgb_eeprom(true); // TODO: instead use command for save/load
                 }
             }
             break;
