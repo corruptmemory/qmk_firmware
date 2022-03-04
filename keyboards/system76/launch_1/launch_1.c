@@ -1,5 +1,5 @@
 #include "dynamic_keymap.h"
-#include "tmk_core/common/eeprom.h"
+#include "platforms/eeprom.h"
 
 #include "launch_1.h"
 #include "usb_mux.h"
