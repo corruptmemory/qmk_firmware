@@ -51,7 +51,7 @@ ________________________________________________________________________________
   |                |        |        |        |        |        |        |        |        |        |        |            |  PGUP  |
   |________________|________|________|________|________|________|________|________|________|________|________|____________|________|_________
   |            |        |       |        |                 |                 |        |        |             |   |        |        |        |
-  |            |        |       |        |                 |                 |        |        |             |   |  HOME  |  PGDN  |  END   |
+  |            |        |       |        |                 |                 |        |        |   NKRO      |   |  HOME  |  PGDN  |  END   |
   |____________|________|_______|________|_________________|_________________|________|________|_____________|   |________|________|________|
 
 * 'RESET' resets the controller and puts the board into firmware flashing mode. If this key is hit accidentally, just unplug the board
@@ -64,7 +64,7 @@ ________________________________________________________________________________
         KC_PSCR, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_TRNS, KC_TRNS, KC_TRNS, KC_VOLD,
           KC_TRNS, KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, KC_TRNS, KC_TRNS, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_TRNS,    KC_TRNS,     KC_MUTE,
               KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,   KC_TRNS,  KC_PGUP,
-          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,     KC_TRNS,          KC_TRNS,      KC_TRNS, KC_TRNS, KC_TRNS,       KC_HOME,  KC_PGDN, KC_END
+          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,     KC_TRNS,          KC_TRNS,      KC_TRNS, KC_TRNS, MAGIC_TOGGLE_NKRO,       KC_HOME,  KC_PGDN, KC_END
   ),
 
   [2] = LAYOUT(

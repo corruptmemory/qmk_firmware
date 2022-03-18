@@ -49,9 +49,6 @@
 #    define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #    define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
 
-#undef TAPPING_TERM
-#define TAPPING_TERM 150
-
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0x3384
